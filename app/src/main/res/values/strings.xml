@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Quiz</string>
+    <string name="Question1">Нужно добавить разделитель для элементов RecyclerView. Для этого используем:</string>
+    <string name="quest1_ansfer1">ItemTouchHelper</string>
+    <string name="quest1_ansfer2">ItemDecoration</string>
+    <string name="quest1_ansfer3">ItemAnimator</string>
+    <string name="quest1_ansfer4">LayoutManager</string>
+    <string name="quest1_ansfer5">Не чего не используем</string>
+    <string name="Question2">В ConstraintLayout у виджета задан такой параметр: app:layout_constraintEnd_toStartOf="@id/some_image". В случае если виджет some_image будет отсутствовать в разметке нам необходимо margin end установить равным 16dp. Для этого мы используем атрибут:</string>
+    <string name="quest2_ansfer1">app:layout_marginEnd="16dp"</string>
+    <string name="quest2_ansfer2">android:layout_marginEnd="16dp"</string>
+    <string name="quest2_ansfer3">android:layout_marginStartToEnd="16dp"</string>
+    <string name="quest2_ansfer4">app:layout_goneMarginEnd="16dp"</string>
+    <string name="quest2_ansfer5">Просим его стать равным 16dp</string>
+    <string name="Question3">Для конкретной разметки экрана в ConstraintLayout стоит задача: все виджеты должны находится от краев экрана на расстоянии 16dp. В этом нам поможет:</string>
+    <string name="quest3_ansfer1">Barrier</string>
+    <string name="quest3_ansfer2">Bias</string>
+    <string name="quest3_ansfer3">Chains</string>
+    <string name="quest3_ansfer4">Guideline</string>
+    <string name="quest3_ansfer5">Нам уже не чего не поможет</string>
+    <string name="Question4">Атрибут ellipsize для TextView:</string>
+    <string name="quest4_ansfer1">Указывает где должен обрезаться текст, если он не вмещается в родительскую view</string>
+    <string name="quest4_ansfer2">Указывает что должно быть на конце строки (троеточие, точка, и т.д.)</string>
+    <string name="quest4_ansfer3">Устанавливает выравнивание строки относительно родительской view</string>
+    <string name="quest4_ansfer4">Указывает что текст должен обрезаться, а не переносится на другую строку, если он не вмещается в родительскую view</string>
+    <string name="quest4_ansfer5">Говорит о том что нужно ити спать</string>
+    <string name="Question5">Какой способ доступа к View из кода наиболее предпочтителен на сегодняшний день?</string>
+    <string name="quest5_ansfer1">Используя Lateinit переменные</string>
+    <string name="quest5_ansfer2">Используя Lazy переменные</string>
+    <string name="quest5_ansfer3">Android data binding</string>
+    <string name="quest5_ansfer4">View binding</string>
+    <string name="quest5_ansfer5">Предпочитаю без способа</string>
+    <string name="Result">Your result:</string>
 </resources>
