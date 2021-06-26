@@ -1,14 +1,11 @@
 package com.rsschool.quiz
 
-import android.content.res.Resources
-import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import androidx.core.os.bundleOf
+import android.util.TypedValue
+import android.view.WindowManager
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 
 class MainActivity : AppCompatActivity(R.layout.activity_main), Transfer
@@ -55,10 +52,25 @@ class MainActivity : AppCompatActivity(R.layout.activity_main), Transfer
         }
     }
 
-    override fun newFragment(fragment: Fragment) {
+    override fun newFragment(fragment: Fragment, id: Int) {
+        onOptionsItemSelected(id)
         OpenFragment(fragment)
     }
 
     override fun getList(): ArrayList<String> = List
 
+
+    fun onOptionsItemSelected(id: Int) {
+        setTheme(id);
+    val typedValue = TypedValue()
+    val theme = getTheme();
+    theme.resolveAttribute(android.R.attr.windowBackground, typedValue, true)
+    getWindow().getDecorView().setBackgroundColor(typedValue.data)
+    theme.resolveAttribute(android.R.attr.colorPrimary, typedValue, true)
+        getSupportActionBar()?.setBackgroundDrawable(ColorDrawable(typedValue.data))
+    theme.resolveAttribute(android.R.attr.colorPrimaryDark, typedValue, true)
+    val window = getWindow()
+    window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+    window.setStatusBarColor(typedValue.data);
+  }
 }

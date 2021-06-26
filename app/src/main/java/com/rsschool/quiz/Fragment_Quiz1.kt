@@ -65,7 +65,7 @@ class Fragment_Quiz1 : Fragment()
         {
             transfer.setData(checked, 1)
             val fragment = Fragment_Quiz2.newInstance()
-            transfer.newFragment(fragment)
+            transfer.newFragment(fragment, R.style.Two)
         }
 
         binding.previous.setOnClickListener()

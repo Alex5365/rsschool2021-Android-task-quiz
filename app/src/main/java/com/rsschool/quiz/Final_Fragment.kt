@@ -62,7 +62,7 @@ class Final_Fragment: Fragment()
         {
             val fragment = Fragment_Quiz1.newInstance()
             for (i in 1..5) transfer.setData( "", i)
-            transfer.newFragment(fragment)
+            transfer.newFragment(fragment, R.style.One)
         }
 
         binding.close.setOnClickListener()

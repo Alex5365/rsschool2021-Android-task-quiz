@@ -61,19 +61,19 @@ class Fragment_Quiz2: Fragment()
         {
             transfer.setData(checked, 2)
             val fragment = Fragment_Quiz3.newInstance()
-            transfer.newFragment(fragment)
+            transfer.newFragment(fragment, R.style.Three)
         }
         binding.toolbar.setNavigationOnClickListener()
         {
             transfer.setData(checked, 2)
             val fragment = Fragment_Quiz1.newInstance()
-            transfer.newFragment(fragment)
+            transfer.newFragment(fragment, R.style.One)
         }
         binding.previous.setOnClickListener()
         {
             transfer.setData(checked, 2)
             val fragment = Fragment_Quiz1.newInstance()
-            transfer.newFragment(fragment)
+            transfer.newFragment(fragment, R.style.One)
         }
 
         binding.optionOne.setOnClickListener()
